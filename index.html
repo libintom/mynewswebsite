@@ -5,12 +5,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
         }
         .news-card {
             margin: 20px;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
+            background-color: #fff;
         }
         .news-card h2 {
             margin-top: 0;
@@ -29,7 +32,7 @@
         document.getElementById('search-form').addEventListener('submit', function(event) {
             event.preventDefault();
             const keyword = document.getElementById('search-input').value;
-            const url = `https://gnews.io/api/v4/search?q=${keyword}&token=YOUR_GNEWS_API_TOKEN`;
+            const url = `https://gnews.io/api/v4/search?q=${keyword}&token=da46ddc15f48c0cc3ef722d5531ec960`;
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
