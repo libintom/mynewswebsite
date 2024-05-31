@@ -14,6 +14,11 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .news-card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         }
         .news-card h2 {
             margin-top: 0;
@@ -37,19 +42,16 @@
     <form id="search-form">
         <input type="text" id="search-input" placeholder="Enter a keyword">
         <select id="language-select">
-            <option value="ar">Arabic</option>
-            <option value="de">German</option>
             <option value="en">English</option>
-            <option value="es">Spanish</option>
+            <option value="de">German</option>
             <option value="fr">French</option>
-            <option value="he">Hebrew</option>
+            <option value="es">Spanish</option>
             <option value="it">Italian</option>
             <option value="nl">Dutch</option>
             <option value="no">Norwegian</option>
             <option value="pt">Portuguese</option>
             <option value="ru">Russian</option>
             <option value="se">Northern Sami</option>
-            <option value="ud">Udmurt</option>
             <option value="zh">Chinese</option>
         </select>
         <select id="category-select">
@@ -63,60 +65,11 @@
             <option value="technology">Technology</option>
         </select>
         <select id="country-select">
-            <option value="ae">United Arab Emirates</option>
-            <option value="ar">Argentina</option>
-            <option value="at">Austria</option>
-            <option value="au">Australia</option>
-            <option value="be">Belgium</option>
-            <option value="bg">Bulgaria</option>
-            <option value="br">Brazil</option>
-            <option value="ca">Canada</option>
-            <option value="ch">Switzerland</option>
-            <option value="cn">China</option>
-            <option value="co">Colombia</option>
-            <option value="cu">Cuba</option>
-            <option value="cz">Czechia</option>
-            <option value="de">Germany</option>
-            <option value="eg">Egypt</option>
-            <option value="fr">France</option>
-            <option value="gb">United Kingdom</option>
-            <option value="gr">Greece</option>
-            <option value="hk">Hong Kong</option>
-            <option value="hu">Hungary</option>
-            <option value="id">Indonesia</option>
-            <option value="ie">Ireland</option>
-            <option value="il">Israel</option>
-            <option value="in">India</option>
-            <option value="it">Italy</option>
-            <option value="jp">Japan</option>
-            <option value="kr">South Korea</option>
-            <option value="lt">Lithuania</option>
-            <option value="lv">Latvia</option>
-            <option value="ma">Morocco</option>
-            <option value="mx">Mexico</option>
-            <option value="my">Malaysia</option>
-            <option value="ng">Nigeria</option>
-            <option value="nl">Netherlands</option>
-            <option value="no">Norway</option>
-            <option value="nz">New Zealand</option>
-            <option value="ph">Philippines</option>
-            <option value="pl">Poland</option>
-            <option value="pt">Portugal</option>
-            <option value="ro">Romania</option>
-            <option value="rs">Serbia</option>
-            <option value="ru">Russia</option>
-            <option value="sa">Saudi Arabia</option>
-            <option value="se">Sweden</option>
-            <option value="sg">Singapore</option>
-            <option value="si">Slovenia</option>
-            <option value="sk">Slovakia</option>
-            <option value="th">Thailand</option>
-            <option value="tr">Turkey</option>
-            <option value="tw">Taiwan</option>
-            <option value="ua">Ukraine</option>
             <option value="us">United States</option>
-            <option value="ve">Venezuela</option>
-            <option value="za">South Africa</option>
+            <option value="au">Australia</option>
+            <option value="ca">Canada</option>
+            <option value="gb">United Kingdom</option>
+            <option value="in">India</option>
         </select>
         <button type="submit">Fetch News</button>
     </form>
