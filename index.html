@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>News Aggregator</title>
+    <title>My News Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,13 +18,25 @@
         .news-card h2 {
             margin-top: 0;
         }
+        #search-form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        #search-input, #language-select {
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Create news website for:</h1>
+    <h1 style="text-align: center;">Custom News Aggregator</h1>
     <form id="search-form">
         <input type="text" id="search-input" placeholder="Enter a keyword">
-        <button type="submit">Create</button>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="ml">Malayalam</option>
+        </select>
+        <button type="submit">Fetch News</button>
     </form>
     <div id="news"></div>
 
@@ -32,7 +44,8 @@
         document.getElementById('search-form').addEventListener('submit', function(event) {
             event.preventDefault();
             const keyword = document.getElementById('search-input').value;
-            const url = `https://gnews.io/api/v4/search?q=${keyword}&token=da46ddc15f48c0cc3ef722d5531ec960`;
+            const language = document.getElementById('language-select').value;
+            const url = `https://gnews.io/api/v4/search?q=${keyword}&lang=${language}&token=da46ddc15f48c0cc3ef722d5531ec960`;
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
