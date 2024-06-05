@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color for the entire page */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+/* Style the logo */
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+/* Style the main headline section */
+.main-headline {
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-headline h1 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: #222; /* Customize headline color */
+}
+
+/* Style the small news section */
+.small-news {
+    /* Add specific styles for smaller news items */
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the categorized news section */
+.categorized-news {
+    /* Add specific styles for categorized news rows */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* Style individual news articles */
+.categorized-news .news-article {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the live updates section */
+.live-updates {
+    /* Add specific styles for trending topics or live updates */
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Style the bottom categories section */
+.bottom-categories {
+    /* Add specific styles for bottom category links */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-categories a {
+    color: #555;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
